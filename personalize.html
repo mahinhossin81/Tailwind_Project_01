@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" class="dark" id="htmlTag">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News - TickerAI</title>
+    <link rel="shortcut icon" href="/images/favicon.ico" type="images/x-icon">
+    <link rel="stylesheet" href="/output/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="bg-[#F0F0F0] dark:bg-gray-900">
+<!-- Header Section  -->
+<header class="shadow py-2 md:py-4 font-leagure" style="width: 100%;">
+        <nav class="container mx-auto " style="width: 100%; border-bottom: 2;">
+            <div class="flex items-center justify-between">
+                <div>
+                    <div class="flex gap-2 items-center">
+                        <a href="index.html"><img src="/images/tickerAI-logo 1.png" alt="logo" class="w-10 md:w-fit"></a>
+                        <p class="text-[8px] md:text-xs font-semibold dark:text-white">
+                            A Mark Cuban Company <br>
+                            AI-based Financial Market News Aggregator
+                        </p>
+                    </div>
+                    <div>
+        
+                    </div>
+                </div>
+                <div class="flex items-center gap-3 md:gap-7 py-2 md:py-4">
+                    <a href="index.html"><button class="bg-[#5677AC] text-white px-2 py-1 md:px-6 md:py-3 rounded-md font-semibold md:text-base hover:bg-[#42669e] transition hover:scale-105">Personalize News </button></a>
+                    <div class="text-[#5677AC] bg-[#5677AC] bg-opacity-15 size-9 flex items-center justify-center rounded-full font-bold text-lg md:text-2xl hover:scale-105 transition cursor-pointer p-2 md:p-6 dark:hover:ring-2 ring-[#5677AC]">IK</div>
+                    <button id="switch" class="hover:scale-105 transition dark:text-white">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 md:size-8">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z" />
+                        </svg>                  
+                    </button>
+                </div>
+            </div>
+         </nav>
+</header>
+
+
+<section class="w-full h-auto bg-[#F0F0F0] dark:bg-gray-700">
+    <div class="container mx-auto">
+        <h1 class="border-b border-gray-700 md:border-b-[3px] pb-2.5 text-3xl font-semibold pt-4 text-gray-700">Personolize your news</h1><br>
+        <div class="flex items-center justify-center mt-[3%] flex-col bg-white w-[90%] md:w-[480px] mx-auto py-5">
+            <h4 class="text-2xl text-gray-800 text-opacity-95 font-bold text-center">Select your Markets</h4><br>
+            <div class="bg-[#E6EBF3] w-[90%] rounded-full text-center py-4 font-bold text-lg text-gray-800 text-opacity-90 my-3">Stocks</div>
+            <div class="bg-[#E6EBF3] w-[90%] rounded-full text-center py-4 font-bold text-lg text-gray-800 text-opacity-90 my-3 border-[2px] border-gray-500">Crypto</div>
+            <div class="bg-[#E6EBF3] w-[90%] rounded-full text-center py-4 font-bold text-lg text-gray-800 text-opacity-90 my-3">Economy & Business</div>
+            <div class="bg-[#E6EBF3] w-[90%] rounded-full text-center py-4 font-bold text-lg text-gray-800 text-opacity-90 my-3">Commondities | Forex</div>
+            <div class=" text-center py-4 font-bold text-lg text-gray-800 text-opacity-90 my-3">Fixed Income</div>
+            <button class="bg-[#5677AC] w-[90%] py-4 rounded-lg font-bold text-white hover:scale-105 hover:transition active:opacity-75">Continue</button>
+        </div><br><br><br><br>
+    </div>
+</section>
+
+
+<footer class="text-center py-3 border-t font-semibold text-sm text-gray-700 dark:text-gray-300">
+    <i class="fa-regular fa-copyright"></i> All right reserved to TickerAI  2024
+</footer>
+
+
+
+<script>
+    const htmlTag = document.getElementById("htmlTag");
+    document.getElementById("switch").addEventListener("click", function(){
+        htmlTag.classList.toggle("dark");
+    });
+</script>
+</body>
+</html>
